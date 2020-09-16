@@ -2,7 +2,7 @@ FROM alpine
 MAINTAINER Christian Gatzlaff <cgatzlaff@gmail.com>
 
 # basic flask environment
-RUN apk add --no-cache bash git nginx uwsgi uwsgi-python3 \
+RUN apk add --no-cache bash git nginx uwsgi uwsgi-python3 py3-pip \
 	&& pip3 install --upgrade pip \
 	&& pip3 install flask
 
